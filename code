@@ -1,0 +1,34 @@
+inn=int(input())
+lst=[]
+s=input().split()
+for i in range(inn):
+    lst.append(s[i])
+lst.sort()
+
+q2=int((3*len(lst))/4)
+for f3 in range(len(lst)):
+    if lst[f3]==lst[q2]:
+        a2=lst[f3+1]
+        b2=lst[f3]
+        o=(int(a2)+int(b2))/2
+        print(float(o))
+med=0
+med = int((len(lst)+1)/2)
+for f in range(len(lst)):
+    if lst[f]==lst[med]:
+        aa=lst[f+1]
+        bb=lst[f]
+        p=(int(aa)+int(bb))/2
+        print(float(p))
+#lst.sort(reverse=False)
+q1=int(inn/4)
+for f1 in range(len(lst)):
+    if lst[f1]==lst[q1]:
+        a1=lst[f1+1]
+        b1=lst[f1]
+        o1=(int(a1)+int(b1))/2
+        print(int(o1))
+        break
+
+#print (int(p))
+#print(lst)
